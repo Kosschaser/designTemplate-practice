@@ -1,0 +1,23 @@
+.counter-bg{
+	background: url(../src/header/counter-img.jpg) fixed;
+	background-size: cover;
+	background-repeat: no-repeat no-repeat;
+	background-position: center, center;
+}
+.counter-wrap{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.counter-cell{
+	width: 20%;
+	margin: 4em auto;
+	padding: 1em;
+	background-color: #fff;
+	text-align: center;
+}
+.counter-title{
+	margin-top: .5em;
+	letter-spacing: 2px;
+	font-weight: 300;
+	color: $gray-text;
+}

@@ -1,0 +1,75 @@
+.portfolio-bg{
+	background-color: $gray;
+}
+.portfolio-header{
+	border-bottom: 1px solid $gray-text;
+	border-top: 1px solid $gray-text;
+	width: 35%;
+	justify-content: space-around;
+	align-self: center;
+	align-items: center;
+	letter-spacing: 5px;
+	padding: 1.5em 0;
+}
+.portfolio-gallery{
+	justify-content: center;
+	width: 100%;
+	flex-wrap: nowrap;
+	margin-top: 5em;
+}
+.portfolio-card{
+	position: relative;
+	height: 350px;
+	&:hover .portfolio-hover{
+		top:50%;
+		opacity: 1;
+	}
+	&:hover .portfolio-brick{
+		
+		opacity: 1;
+	}
+}
+.portfolio-hover{
+	top: 25%;
+	transform: translate(0%, -50%);
+	background-color: #fff;
+	text-align: center;
+	margin: 0 1em;
+	padding: 1em 0;
+	position: absolute;
+	z-index: 99;
+	opacity: 0;
+	transition: all .5s;
+	h6{
+		letter-spacing: 3px;
+		margin: 1em 0;
+		font-weight: 400;
+	}
+	p{
+		color: $gray-text;
+		line-height: 25px;
+	}
+}
+.portfolio-brick{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	background-color: $yellow;
+	width: 75%;
+	height: 75%;
+	opacity: 0;
+	transition: all .5s;
+}
+.portfolio-button{
+	border: 0;
+	outline: none;
+	background-color: $yellow;
+	padding: 1.5em 2.5em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: .8em;
+	margin: 4em auto;
+	cursor: pointer;
+}
